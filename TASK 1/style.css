@@ -127,20 +127,6 @@ a.project-link:hover {
   color: #2563eb;
   text-decoration: underline;
 }
-#download{
- display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#download a{
-color:blue;
-font-weight: bold;
- background-color:#d1d5db;
- border-radius: 10%;
- font-size: xx-large;
- padding:10px;
-}
 
 footer {
   background-color: #1f2937;
