@@ -1,0 +1,152 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #111827;
+  line-height: 1.6;
+}
+.image{
+  height: 151px;
+  width: 102%;
+}
+
+.hero {
+  background-image: url('./images/pic.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(17, 24, 39, 0.7);
+  padding: 2rem;
+  text-align: center;
+  color: #f9fafb;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+nav {
+  background: #1f2937;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #374151;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1d4ed8;
+}
+
+.skills-list, .tools-list, .projects-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.skills-list li, .tools-list li, .projects-list li {
+  background: #e5e7eb;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.skills-list li:hover, .tools-list li:hover, .projects-list li:hover {
+  background: #d1d5db;
+  transform: translateY(-2px);
+}
+
+a.project-link {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+a.project-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+#download{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#download a{
+color:blue;
+font-weight: bold;
+ background-color:#d1d5db;
+ border-radius: 10%;
+ font-size: xx-large;
+ padding:10px;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #f9fafb;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

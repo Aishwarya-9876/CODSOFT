@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      height: 100%;
+      width: 100%;
+    }
+
+    .navbar {
+      background-color: #4d2e4c;
+      padding: 20px;
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .hero-section {
+      background-image: url("4503668370293489.jpeg");
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
+      height: 100vh; 
+      display: flex;
+      align-items: stretch;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 5vw;
+    }
+
+    .text-content {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .name {
+      font-size: 36px;
+      color: rgb(255, 190, 255);
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: rgb(255, 220, 255);
+    }
+
+    h3 {
+      font-size: 24px;
+      color: rgb(240, 210, 240);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: rgb(230, 190, 240);
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 20px;
+      background-color: #eedcea;
+      color: black;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: fit-content;
+    }
+
+    button:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        background-position: center;
+      }
+
+      .overlay {
+        padding: 20px;
+        align-items: flex-start;
+      }
+
+      .text-content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      .name {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <div class="hero-section">
+    <div class="overlay">
+      <div class="text-content">
+        <div class="name">AISH BEAUTY PARLOUR</div>
+        <h1>Ready for a glow-up?</h1>
+        <h2>Glow like never before with our expert beauty transformations, tailored just for you ✨</h2>
+        <h3>Book Your Slot Now!!</h3>
+        <button>Book Slot</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
